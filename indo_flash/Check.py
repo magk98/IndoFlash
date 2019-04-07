@@ -1,5 +1,5 @@
 #main class used for translation app
-import collections, random
+import random
 import sys
 
 
