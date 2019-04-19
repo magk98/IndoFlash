@@ -1,0 +1,30 @@
+<Button>:
+    font_size: 30
+
+<LoginScreen>:
+
+    b_indo: b_indo
+    b_pl: b_pl
+
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+
+
+        GridLayout:
+            cols: 2
+            Label:
+                color: 0.3, 0.7, 0.3, 1
+                text: 'Wybierz język'
+                font_size: 30
+        Button:
+            id: b_indo
+            text: "indo"
+            background_color: 1, 0.1, 0.1, 1
+            on_press: root.indo_pressed()
+
+        Button:
+            id: b_pl
+            text: "polski"
+            background_color: 0.27, 0.74, 0.90, 1
+            on_press: root.pl_pressed()
